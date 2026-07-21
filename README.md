@@ -1,26 +1,30 @@
-# FlowPilot SaaS Product Usage & Cloud Cost Optimization Dashboard
+# FlowPilot SaaS Cloud Economics
 
-A portfolio-grade **Business Analysis + Product Analytics + FinOps + AWS** case study. The app connects SaaS subscription revenue, product adoption, customer behavior, and AWS-style infrastructure cost to produce decision-ready recommendations.
+> An interactive **Business Analysis + Product Analytics + FinOps + AWS** portfolio case study that connects SaaS product usage, subscription revenue, customer behavior, and cloud infrastructure cost.
+
+## Portfolio objective
+
+FlowPilot is a fictional B2B workflow-automation SaaS company. Product adoption is growing, but infrastructure cost is increasing faster than recurring revenue. This project turns synthetic customer, subscription, feature-usage, and AWS-style cost data into decision-ready insights for Product, Finance, Customer Success, and Cloud Operations.
+
+The dashboard answers five practical questions:
+
+1. Which features drive the most cloud cost?
+2. Which features have high cost but weak adoption?
+3. Which customers consume more infrastructure than their subscription economics support?
+4. Which AWS services and environments create the most cost pressure?
+5. Which pricing, architecture, and governance actions should be prioritized?
 
 ## Live dashboard
 
-The repository is ready for Streamlit Community Cloud deployment. Use:
+**Deployment status:** Streamlit-ready. The public app URL will be added here after deployment.
 
-- Repository: `weiyu1029/practice_1`
+Streamlit configuration:
+
 - Branch: `main`
-- Main file: `streamlit_app.py`
+- Main file path: `streamlit_app.py`
+- Secrets required: none
 
-## Business problem
-
-FlowPilot is a fictional B2B workflow-automation SaaS company. Product usage is growing, but cloud cost is rising faster than recurring revenue. Leadership needs to answer:
-
-- Which features drive the most cloud cost?
-- Which features have high cost but weak adoption?
-- Which customers consume more infrastructure than their subscription economics support?
-- Which AWS services and environments create cost pressure?
-- Which pricing, architecture, and governance actions should be prioritized?
-
-## Dashboard pages
+## Dashboard experience
 
 1. **Executive Overview** — MRR, cloud cost, infrastructure margin, cost per customer, budget variance, service mix, and leadership findings.
 2. **Feature Economics** — adoption-versus-cost quadrant, unit economics, and feature optimization priorities.
@@ -29,7 +33,7 @@ FlowPilot is a fictional B2B workflow-automation SaaS company. Product usage is 
 5. **Decision Assistant** — deterministic, traceable answers grounded in dashboard metrics.
 6. **Data & Architecture** — data model, AWS target architecture, governance, and downloadable analytical data.
 
-## AWS target architecture
+## AWS-aligned target architecture
 
 ```text
 Synthetic SaaS data
@@ -47,13 +51,14 @@ Streamlit or Amazon QuickSight
 CloudWatch + SNS + AWS Budgets
 ```
 
-### Why these services?
+### Service rationale
 
 - **Amazon S3** — scalable analytical object storage.
-- **AWS Lambda / AWS Glue** — managed and repeatable transformation.
+- **AWS Lambda / AWS Glue** — managed, repeatable data transformation.
 - **Amazon Athena** — serverless SQL with visible scan-cost optimization opportunities.
-- **CloudWatch and SNS** — pipeline monitoring and alerting.
+- **CloudWatch and SNS** — pipeline monitoring and operational alerting.
 - **AWS Budgets** — cost-threshold governance.
+- **IAM least privilege and encryption** — access control and data protection.
 - **Streamlit** — interactive public portfolio delivery without exposing AWS credentials.
 
 ## KPI framework
@@ -68,23 +73,23 @@ CloudWatch + SNS + AWS Budgets
 
 ## Synthetic data design
 
-The app creates deterministic synthetic data with seed `42` for:
+The application generates deterministic synthetic data with seed `42` for:
 
 - 240 SaaS customers
 - 18 monthly periods
 - Starter, Professional, and Enterprise plans
 - Five industries and three regions
 - Eight product features
-- AWS service cost attribution
+- AWS-service cost attribution
 - Feature adoption, active users, usage units, MRR, and allocated cloud cost
 
-The data intentionally includes realistic signals such as an AI Assistant cost spike, high-cost/low-adoption features, margin-risk customers, and excess development spend. It contains no real customer information.
+The scenario intentionally contains an AI Assistant cost spike, high-cost/low-adoption features, margin-risk customers, and excess development spend. It contains no real customer or personal information.
 
 ## Run locally
 
 ```bash
-git clone https://github.com/weiyu1029/practice_1.git
-cd practice_1
+git clone <repository-url>
+cd <repository-folder>
 python -m venv .venv
 source .venv/bin/activate  # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
@@ -94,13 +99,13 @@ streamlit run streamlit_app.py
 ## Deploy to Streamlit Community Cloud
 
 1. Sign in to Streamlit Community Cloud with GitHub.
-2. Click **Create app**.
-3. Select `weiyu1029/practice_1`.
-4. Select branch `main`.
-5. Set main file path to `streamlit_app.py`.
-6. Choose a subdomain and deploy.
+2. Select **Create app**.
+3. Choose this repository and branch `main`.
+4. Set the main file path to `streamlit_app.py`.
+5. Choose a public subdomain and deploy.
+6. Add the deployed URL to the **Live dashboard** section above.
 
-No secrets are required. Because the repository is currently private, Streamlit must be granted access to private repositories. For a public portfolio, change the repository visibility to public before sharing the app.
+No API keys or application secrets are required.
 
 ## Portfolio story
 
@@ -113,12 +118,17 @@ No secrets are required. Because the repository is currently private, Streamlit 
 - Developed stakeholder-specific views for Product, Finance, Customer Success, and Cloud Operations, including pricing-review and architecture-optimization recommendations.
 - Modeled an AWS analytics architecture using S3, Lambda/Glue, Athena, CloudWatch, SNS, Budgets, IAM least privilege, and encryption principles.
 
-## Security and ethics
+## Security, ethics, and limitations
 
 - No real customer data or personally identifiable information.
-- No AWS credentials, API keys, or private keys.
+- No AWS credentials, API keys, private keys, or hidden external services.
 - Costs are illustrative and are not current AWS price quotes.
-- The decision assistant is deterministic and does not fabricate evidence.
+- The Decision Assistant is deterministic and does not fabricate evidence.
+- This is a portfolio case study, not a production billing or financial-reporting system.
+
+## Recommended repository name
+
+`flowpilot-saas-cloud-economics`
 
 ## License
 
