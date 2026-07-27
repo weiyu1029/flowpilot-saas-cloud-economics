@@ -1,0 +1,10 @@
+feature_name,product_area,release_date,minimum_plan,primary_aws_service,primary_usage_metric,business_value
+Workflow Automation,Core Platform,2024-01-01,Starter,AWS Lambda,workflow_runs,Automate repeatable business processes
+Team Collaboration,Collaboration,2024-01-01,Starter,Amazon DynamoDB,collaboration_actions,"Share workflows, comments, and approvals"
+Dashboard Reporting,Analytics,2024-01-01,Starter,Amazon Athena,dashboard_views,Monitor operational KPIs
+Data Export,Data Management,2024-01-01,Starter,Amazon S3,exports_count,Export CSV and scheduled reports
+File Storage,Data Management,2024-01-01,Starter,Amazon S3,storage_gb,Store files and workflow attachments
+API Integration,Integrations,2024-01-01,Professional,Amazon API Gateway,api_calls,Connect external systems through APIs
+AI Assistant,Artificial Intelligence,2025-05-01,Professional,Amazon Bedrock,ai_tokens_million,Generate summaries and workflow recommendations
+Advanced Analytics,Analytics,2025-09-01,Enterprise,AWS Glue,analytics_queries,Build advanced cross-workspace analysis
+Admin Controls,Administration,2024-01-01,Enterprise,AWS Lambda,admin_actions,Manage enterprise governance and access

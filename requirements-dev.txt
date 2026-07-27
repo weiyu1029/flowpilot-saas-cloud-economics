@@ -1,0 +1,4 @@
+-r requirements.txt
+scikit-learn==1.8.0
+Faker==40.1.2
+pytest==9.0.2

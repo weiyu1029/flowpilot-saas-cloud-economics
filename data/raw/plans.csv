@@ -1,0 +1,4 @@
+plan_type,base_mrr,included_seats,seat_price,included_storage_gb,included_api_calls,target_cost_ratio
+Starter,149.0,5,14.0,50,10000,0.1
+Professional,599.0,25,22.0,500,250000,0.14
+Enterprise,2499.0,100,31.0,2000,1500000,0.18

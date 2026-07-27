@@ -1,135 +1,136 @@
-# FlowPilot SaaS Cloud Economics
+<p align="center"><img src="assets/cover.png" alt="FlowPilot cover" width="100%"></p>
 
-> An interactive **Business Analysis + Product Analytics + FinOps + AWS** portfolio case study that connects SaaS product usage, subscription revenue, customer behavior, and cloud infrastructure cost.
+# FlowPilot — SaaS Product Usage & Cloud Cost Optimization
 
-## Portfolio objective
+[![CI](https://github.com/weiyu1029/flowpilot-saas-cloud-economics/actions/workflows/ci.yml/badge.svg)](https://github.com/weiyu1029/flowpilot-saas-cloud-economics/actions/workflows/ci.yml)
+![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB)
+![Streamlit](https://img.shields.io/badge/Streamlit-1.59-FF4B4B)
+![Tests](https://img.shields.io/badge/tests-8%20passing-16A34A)
+![Data](https://img.shields.io/badge/data-synthetic-7C3AED)
 
-FlowPilot is a fictional B2B workflow-automation SaaS company. Product adoption is growing, but infrastructure cost is increasing faster than recurring revenue. This project turns synthetic customer, subscription, feature-usage, and AWS-style cost data into decision-ready insights for Product, Finance, Customer Success, and Cloud Operations.
+A recruiter-ready portfolio project that connects **SaaS product adoption, subscription revenue, AWS-style infrastructure cost, customer unit economics, reliability, and prioritized FinOps actions**.
 
-The dashboard answers five practical questions:
+> **Portfolio disclaimer:** all data and rates are deterministic synthetic examples. This is not an AWS bill estimate or audited financial model.
 
-1. Which features drive the most cloud cost?
-2. Which features have high cost but weak adoption?
-3. Which customers consume more infrastructure than their subscription economics support?
-4. Which AWS services and environments create the most cost pressure?
-5. Which pricing, architecture, and governance actions should be prioritized?
+> **GitHub repository:** `weiyu1029/flowpilot-saas-cloud-economics`
 
-## Live dashboard
+## Why this project exists
+A cloud bill tells you where money was spent; it does not automatically tell you which product feature, customer, or business decision created value. FlowPilot answers that missing layer for Product, Finance, Customer Success, Engineering, and executives.
 
-**Deployment status:** Streamlit-ready. The public app URL will be added here after deployment.
+## Latest portfolio snapshot — June 2026
 
-Streamlit configuration:
+| MRR | Cloud cost | Cost / revenue | Est. gross margin | Margin-risk customers | MRR at risk |
+|---:|---:|---:|---:|---:|---:|
+| $751,800 | $178,102 | 23.7% | 76.3% | 88 | $273,050 |
 
-- Branch: `main`
-- Main file path: `streamlit_app.py`
-- Secrets required: none
+## Dashboard
 
-## Dashboard experience
+### Executive Overview
+![Executive overview](assets/screenshots/01_executive_overview.png)
 
-1. **Executive Overview** — MRR, cloud cost, infrastructure margin, cost per customer, budget variance, service mix, and leadership findings.
-2. **Feature Economics** — adoption-versus-cost quadrant, unit economics, and feature optimization priorities.
-3. **Customer Profitability** — cost-to-revenue ratio, margin-risk accounts, revenue at risk, and pricing-review candidates.
-4. **FinOps & Optimization** — environment cost, actual versus budget, recommendations, and an interactive savings simulator.
-5. **Decision Assistant** — deterministic, traceable answers grounded in dashboard metrics.
-6. **Data & Architecture** — data model, AWS target architecture, governance, and downloadable analytical data.
+### Feature Economics
+![Feature economics](assets/screenshots/02_feature_economics.png)
 
-## AWS-aligned target architecture
+### Customer Profitability
+![Customer profitability](assets/screenshots/03_customer_profitability.png)
 
-```text
-Synthetic SaaS data
-        ↓
-Amazon S3 (raw / processed / curated)
-        ↓
-AWS Lambda or AWS Glue
-        ↓
-AWS Glue Data Catalog
-        ↓
-Amazon Athena
-        ↓
-Streamlit or Amazon QuickSight
-        ↓
-CloudWatch + SNS + AWS Budgets
-```
+### AWS FinOps & Reliability
+![FinOps and reliability](assets/screenshots/04_finops_reliability.png)
 
-### Service rationale
+## Seven stakeholder views
+1. **Executive Overview** — MRR, cloud cost, margin, budget, risk, and revenue-vs-cost diagnostics.
+2. **Feature Economics** — adoption, cost per active user, cost share, growth, and investment quadrant.
+3. **Customer Profitability** — allocated cost, cost-to-revenue ratio, customer health, and pricing-review candidates.
+4. **AWS FinOps & Reliability** — service/environment cost, budget performance, incidents, and anomaly evidence.
+5. **Optimization Center** — recommendations ranked by impact, effort, confidence, owner, and risk.
+6. **Data & Architecture** — architecture, data model, quality checks, and downloads.
+7. **Insights Copilot** — explainable natural-language answers without API keys.
 
-- **Amazon S3** — scalable analytical object storage.
-- **AWS Lambda / AWS Glue** — managed, repeatable data transformation.
-- **Amazon Athena** — serverless SQL with visible scan-cost optimization opportunities.
-- **CloudWatch and SNS** — pipeline monitoring and operational alerting.
-- **AWS Budgets** — cost-threshold governance.
-- **IAM least privilege and encryption** — access control and data protection.
-- **Streamlit** — interactive public portfolio delivery without exposing AWS credentials.
+## Architecture
+![AWS architecture](assets/architecture.png)
 
-## KPI framework
+The checked-in app reads curated Parquet/CSV for deterministic deployment. The documented target implementation uses **Amazon S3, AWS Lambda or Glue, Glue Data Catalog, Athena, CloudWatch, SNS, AWS Budgets, IAM, and optional Claude/OpenAI/Amazon Bedrock grounding**.
 
-| KPI | Formula | Decision supported |
-|---|---|---|
-| Cost-to-Revenue Ratio | Allocated Cloud Cost / MRR | Customer margin risk and pricing review |
-| Infrastructure Gross Margin | (MRR - Cloud Cost) / MRR | Company and plan economics |
-| Feature Adoption Rate | Active Customers / Eligible Customers | Product prioritization |
-| Cost per Active User | Feature Cost / Active Users | Unit-cost efficiency |
-| Budget Variance | Actual Cloud Cost - Budget | FinOps governance |
+## Data scale
 
-## Synthetic data design
+| Dataset | Rows |
+|---|---:|
+| Customers | 480 |
+| Subscription customer-months | 6,307 |
+| Product usage customer-feature-months | 39,561 |
+| Cloud cost allocation rows | 121,538 |
+| Infrastructure service/environment-months | 439 |
+| Curated customer-months | 6,307 |
+| Curated feature-months | 150 |
+| Data-quality checks | 19 (19 PASS) |
 
-The application generates deterministic synthetic data with seed `42` for:
+## Key findings
+- **AI Assistant** is the largest direct feature-cost pool at $49,396/month.
+- **88** customers exceed the synthetic 25% cloud-cost-to-revenue threshold.
+- The latest month is **$14,087 under budget**, but service, environment, and feature views still reveal optimization work.
+- Eight recommendations represent a synthetic **$64,708/month** impact pipeline.
 
-- 240 SaaS customers
-- 18 monthly periods
-- Starter, Professional, and Enterprise plans
-- Five industries and three regions
-- Eight product features
-- AWS-service cost attribution
-- Feature adoption, active users, usage units, MRR, and allocated cloud cost
+See [Findings and Recommendations](docs/findings_and_recommendations.md).
 
-The scenario intentionally contains an AI Assistant cost spike, high-cost/low-adoption features, margin-risk customers, and excess development spend. It contains no real customer or personal information.
-
-## Run locally
+## Quick start
 
 ```bash
-git clone <repository-url>
-cd <repository-folder>
+git clone https://github.com/weiyu1029/flowpilot-saas-cloud-economics.git
+cd flowpilot-saas-cloud-economics
 python -m venv .venv
-source .venv/bin/activate  # Windows: .venv\Scripts\activate
+source .venv/bin/activate          # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 streamlit run streamlit_app.py
 ```
 
+The app opens at `http://localhost:8501`.
+
+### macOS convenience
+- Double-click `RUN_LOCAL_MAC.command` to create a virtual environment and launch the app.
+- After creating the GitHub repository, double-click `PUBLISH_AND_OPEN_STREAMLIT_MAC.command` to push and open Streamlit Community Cloud.
+- See [macOS Setup](docs/mac_setup.md).
+
+## Rebuild the synthetic data
+
+```bash
+python scripts/run_pipeline.py
+pytest -q
+```
+
+## Engineering quality
+- Deterministic synthetic generator and curated analytics pipeline.
+- CSV + Parquet outputs.
+- Data-quality, metric, and seven-page Streamlit smoke tests.
+- GitHub Actions CI.
+- Dockerfile and Makefile.
+- Secrets-free default deployment.
+- Security, cost, architecture, ADR, interview, and demo documentation.
+
 ## Deploy to Streamlit Community Cloud
+1. Push the repository to GitHub.
+2. In Streamlit Community Cloud, create an app from the repo.
+3. Select branch `main` and entrypoint `streamlit_app.py`.
+4. Deploy; no secrets are required for the current version.
 
-1. Sign in to Streamlit Community Cloud with GitHub.
-2. Select **Create app**.
-3. Choose this repository and branch `main`.
-4. Set the main file path to `streamlit_app.py`.
-5. Choose a public subdomain and deploy.
-6. Add the deployed URL to the **Live dashboard** section above.
+Detailed instructions: [Streamlit Deployment](docs/streamlit_deployment.md).
 
-No API keys or application secrets are required.
+## Documentation index
+- [Business Requirements](docs/business_requirements.md)
+- [Stakeholder Map](docs/stakeholder_map.md)
+- [User Stories](docs/user_stories.md)
+- [KPI Dictionary](docs/kpi_dictionary.md)
+- [Data Dictionary](docs/data_dictionary.md)
+- [Architecture](docs/architecture.md)
+- [AWS Implementation](docs/aws_implementation.md)
+- [Security & Cost](docs/security_and_cost_considerations.md)
+- [Findings & Recommendations](docs/findings_and_recommendations.md)
+- [Limitations](docs/limitations.md)
+- [Interview Guide](docs/interview_guide.md)
+- [Demo Script](docs/demo_script.md)
+- [Project Plan](docs/project_plan.md)
 
-## Portfolio story
-
-> I built a cloud-aware SaaS economics solution that maps product usage to AWS-style infrastructure cost and subscription revenue. The dashboard helps Product, Finance, Customer Success, and Cloud Operations identify feature optimization opportunities, customer margin risk, pricing-review candidates, and cost-governance actions. I used deterministic synthetic data, explainable KPI thresholds, and a traceable decision assistant so every recommendation can be tied back to evidence.
-
-## Resume bullets
-
-- Built an interactive SaaS product-usage and cloud-cost optimization dashboard using Python, Streamlit, Plotly, and AWS-aligned FinOps concepts.
-- Designed KPI logic for feature adoption, cost per active user, customer cost-to-revenue ratio, infrastructure gross margin, and budget variance.
-- Developed stakeholder-specific views for Product, Finance, Customer Success, and Cloud Operations, including pricing-review and architecture-optimization recommendations.
-- Modeled an AWS analytics architecture using S3, Lambda/Glue, Athena, CloudWatch, SNS, Budgets, IAM least privilege, and encryption principles.
-
-## Security, ethics, and limitations
-
-- No real customer data or personally identifiable information.
-- No AWS credentials, API keys, private keys, or hidden external services.
-- Costs are illustrative and are not current AWS price quotes.
-- The Decision Assistant is deterministic and does not fabricate evidence.
-- This is a portfolio case study, not a production billing or financial-reporting system.
-
-## Recommended repository name
-
-`flowpilot-saas-cloud-economics`
+## Skills demonstrated
+`Business analysis` · `Product analytics` · `FinOps` · `SaaS metrics` · `AWS` · `Python` · `Pandas` · `SQL concepts` · `Streamlit` · `Plotly` · `Data modeling` · `Data quality` · `CI/CD` · `Cloud security` · `Cost optimization` · `Stakeholder communication`
 
 ## License
-
-MIT License.
+MIT. See [LICENSE](LICENSE).

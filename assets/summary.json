@@ -1,0 +1,16 @@
+{
+  "as_of_month": "2026-06-01",
+  "mrr_usd": 751800.23,
+  "arr_run_rate_usd": 9021602.76,
+  "total_cloud_cost_usd": 178102.21,
+  "cloud_cost_to_revenue_ratio": 0.2369,
+  "estimated_gross_margin_pct": 0.7631,
+  "active_customers": 433,
+  "margin_risk_customers": 88,
+  "revenue_at_risk_usd": 273050.35,
+  "budget_usd": 192189.07,
+  "variance_usd": -14086.86,
+  "data_quality_checks": 19,
+  "data_quality_passes": 19,
+  "estimated_monthly_impact_usd": 64708.42
+}

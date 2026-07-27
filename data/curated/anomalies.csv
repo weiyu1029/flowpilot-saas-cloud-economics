@@ -1,0 +1,69 @@
+month,entity_type,entity_name,metric_name,metric_value,rolling_mean,deviation_pct,severity
+2026-06-01,feature,Advanced Analytics,feature_cloud_cost_usd,18200.57,16981.12,0.0718,Medium
+2026-06-01,feature,File Storage,feature_cloud_cost_usd,13262.93,12892.22,0.0288,Medium
+2026-06-01,feature,Team Collaboration,feature_cloud_cost_usd,8349.12,8041.8,0.0382,Medium
+2026-06-01,service,AWS Glue,cost_usd,6841.72,6435.19,0.0632,Medium
+2026-06-01,service,AWS Support,cost_usd,4876.23,4535.5,0.0751,Medium
+2026-06-01,service,Amazon Athena,cost_usd,19210.9,18805.02,0.0216,Medium
+2026-06-01,service,Amazon CloudFront,cost_usd,5619.85,5567.55,0.0094,Medium
+2026-06-01,service,Amazon EC2,cost_usd,14732.18,14112.82,0.0439,Medium
+2026-06-01,service,Amazon QuickSight,cost_usd,15143.53,14809.47,0.0226,Medium
+2026-05-01,feature,AI Assistant,feature_cloud_cost_usd,50407.77,49205.91,0.0244,Medium
+2026-05-01,feature,API Integration,feature_cloud_cost_usd,9046.58,8574.25,0.0551,Medium
+2026-05-01,feature,Admin Controls,feature_cloud_cost_usd,7056.09,6693.03,0.0542,Medium
+2026-05-01,feature,Advanced Analytics,feature_cloud_cost_usd,19645.76,15852.68,0.2393,Medium
+2026-05-01,feature,Dashboard Reporting,feature_cloud_cost_usd,28406.2,27147.25,0.0464,Medium
+2026-05-01,feature,Data Export,feature_cloud_cost_usd,6950.57,6777.18,0.0256,Medium
+2026-05-01,service,AWS Glue,cost_usd,7469.79,6036.37,0.2375,Medium
+2026-05-01,service,AWS Lambda,cost_usd,18278.89,17755.38,0.0295,Medium
+2026-05-01,service,AWS Support,cost_usd,4503.94,4295.92,0.0484,Medium
+2026-05-01,service,Amazon API Gateway,cost_usd,6638.01,6397.42,0.0376,Medium
+2026-05-01,service,Amazon Athena,cost_usd,20299.91,18420.13,0.1021,Medium
+2026-05-01,service,Amazon Bedrock,cost_usd,36281.19,35426.45,0.0241,Medium
+2026-05-01,service,Amazon CloudFront,cost_usd,5687.39,5449.35,0.0437,Medium
+2026-05-01,service,Amazon DynamoDB,cost_usd,6501.01,6312.08,0.0299,Medium
+2026-05-01,service,Amazon QuickSight,cost_usd,16027.82,14474.96,0.1073,Medium
+2026-05-01,service,Amazon S3,cost_usd,20870.6,20197.34,0.0333,Medium
+2026-05-01,service,Data Transfer,cost_usd,3931.84,3777.32,0.0409,Medium
+2026-04-01,feature,Admin Controls,feature_cloud_cost_usd,6653.37,6304.99,0.0553,Medium
+2026-04-01,feature,Workflow Automation,feature_cloud_cost_usd,3893.38,3636.01,0.0708,Medium
+2026-04-01,service,AWS Step Functions,cost_usd,1093.17,1019.28,0.0725,Medium
+2026-03-01,feature,AI Assistant,feature_cloud_cost_usd,47326.39,40045.22,0.1818,Medium
+2026-03-01,feature,API Integration,feature_cloud_cost_usd,8626.21,7734.22,0.1153,Medium
+2026-03-01,service,Amazon Bedrock,cost_usd,34096.32,28819.41,0.1831,Medium
+2026-03-01,service,Amazon EC2,cost_usd,14543.4,14050.07,0.0351,Medium
+2026-03-01,service,Amazon RDS,cost_usd,12536.21,11758.43,0.0661,Medium
+2026-02-01,service,Amazon CloudWatch,cost_usd,15637.88,10855.96,0.4405,High
+2026-02-01,feature,File Storage,feature_cloud_cost_usd,10526.09,10399.13,0.0122,Medium
+2026-02-01,service,Amazon S3,cost_usd,16926.84,16265.16,0.0407,Medium
+2026-01-01,service,Amazon CloudWatch,cost_usd,9285.96,8130.88,0.1421,Medium
+2025-03-01,service,Amazon RDS,cost_usd,7560.43,7447.08,0.0152,Medium
+2025-02-01,feature,Dashboard Reporting,feature_cloud_cost_usd,13137.22,12065.92,0.0888,Medium
+2025-02-01,feature,Data Export,feature_cloud_cost_usd,2319.76,2531.29,-0.0836,Medium
+2025-02-01,feature,Team Collaboration,feature_cloud_cost_usd,3485.26,3111.5,0.1201,Medium
+2025-02-01,feature,Workflow Automation,feature_cloud_cost_usd,1957.21,1782.79,0.0978,Medium
+2025-02-01,service,AWS Lambda,cost_usd,4859.2,4573.89,0.0624,Medium
+2025-02-01,service,AWS Step Functions,cost_usd,548.0,499.21,0.0977,Medium
+2025-02-01,service,Amazon API Gateway,cost_usd,2627.48,2441.69,0.0761,Medium
+2025-02-01,service,Amazon DynamoDB,cost_usd,2802.15,2523.64,0.1104,Medium
+2025-02-01,service,Data Transfer,cost_usd,1160.92,1182.1,-0.0179,Medium
+2025-01-01,feature,API Integration,feature_cloud_cost_usd,3054.38,,,Medium
+2025-01-01,feature,Admin Controls,feature_cloud_cost_usd,2441.64,,,Medium
+2025-01-01,feature,Dashboard Reporting,feature_cloud_cost_usd,10994.63,,,Medium
+2025-01-01,feature,Data Export,feature_cloud_cost_usd,2742.81,,,Medium
+2025-01-01,feature,File Storage,feature_cloud_cost_usd,2680.91,,,Medium
+2025-01-01,feature,Team Collaboration,feature_cloud_cost_usd,2737.75,,,Medium
+2025-01-01,feature,Workflow Automation,feature_cloud_cost_usd,1608.37,,,Medium
+2025-01-01,service,AWS Lambda,cost_usd,4288.58,,,Medium
+2025-01-01,service,AWS Step Functions,cost_usd,450.43,,,Medium
+2025-01-01,service,AWS Support,cost_usd,2790.14,,,Medium
+2025-01-01,service,Amazon API Gateway,cost_usd,2255.89,,,Medium
+2025-01-01,service,Amazon Athena,cost_usd,5266.55,,,Medium
+2025-01-01,service,Amazon CloudFront,cost_usd,2486.49,,,Medium
+2025-01-01,service,Amazon CloudWatch,cost_usd,3653.95,,,Medium
+2025-01-01,service,Amazon DynamoDB,cost_usd,2245.14,,,Medium
+2025-01-01,service,Amazon EC2,cost_usd,9073.6,,,Medium
+2025-01-01,service,Amazon QuickSight,cost_usd,4070.21,,,Medium
+2025-01-01,service,Amazon RDS,cost_usd,7337.56,,,Medium
+2025-01-01,service,Amazon S3,cost_usd,5121.89,,,Medium
+2025-01-01,service,Data Transfer,cost_usd,1203.28,,,Medium

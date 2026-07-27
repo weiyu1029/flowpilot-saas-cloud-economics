@@ -1,0 +1,20 @@
+table_name,check_name,status,observed_value,expected_rule
+customers,row_count_positive,PASS,480,> 0 rows
+customers,duplicate_rows,PASS,0,0 full-row duplicates
+subscriptions_monthly,row_count_positive,PASS,6307,> 0 rows
+subscriptions_monthly,duplicate_rows,PASS,0,0 full-row duplicates
+product_usage_monthly,row_count_positive,PASS,39561,> 0 rows
+product_usage_monthly,duplicate_rows,PASS,0,0 full-row duplicates
+cloud_cost_allocations_monthly,row_count_positive,PASS,121538,> 0 rows
+cloud_cost_allocations_monthly,duplicate_rows,PASS,0,0 full-row duplicates
+infrastructure_costs_monthly,row_count_positive,PASS,439,> 0 rows
+infrastructure_costs_monthly,duplicate_rows,PASS,0,0 full-row duplicates
+budgets_monthly,row_count_positive,PASS,18,> 0 rows
+budgets_monthly,duplicate_rows,PASS,0,0 full-row duplicates
+customers,unique_key_customer_id,PASS,0,0 duplicate keys
+subscriptions_monthly,unique_key_month_customer_id,PASS,0,0 duplicate keys
+product_usage_monthly,unique_key_month_customer_id_feature_name,PASS,0,0 duplicate keys
+budgets_monthly,unique_key_month,PASS,0,0 duplicate keys
+subscriptions_monthly,nonnegative_mrr_usd,PASS,0,No negative values
+cloud_cost_allocations_monthly,nonnegative_cost_usd,PASS,0,No negative values
+infrastructure_costs_monthly,nonnegative_cost_usd,PASS,0,No negative values

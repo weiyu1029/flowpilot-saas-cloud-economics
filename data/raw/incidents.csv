@@ -1,0 +1,114 @@
+incident_id,incident_date,month,aws_service,feature_name,severity,downtime_minutes,estimated_business_impact_usd,root_cause,status
+INC-0001,2025-01-05,2025-01-01,Amazon S3,API Integration,SEV-3,8,410.69,Third-party integration latency,Resolved
+INC-0002,2025-01-09,2025-01-01,Amazon API Gateway,Team Collaboration,SEV-2,112,6994.17,Deployment regression,Resolved
+INC-0003,2025-01-17,2025-01-01,Amazon RDS,File Storage,SEV-3,14,822.06,Unoptimized query,Resolved
+INC-0004,2025-01-21,2025-01-01,Amazon Athena,API Integration,SEV-4,14,583.91,Logging verbosity increase,Resolved
+INC-0005,2025-01-25,2025-01-01,Amazon API Gateway,Data Export,SEV-3,9,659.16,Always-on development resources,Resolved
+INC-0006,2025-01-29,2025-01-01,Amazon CloudWatch,Workflow Automation,SEV-4,9,281.24,Deployment regression,Resolved
+INC-0007,2025-02-02,2025-02-01,AWS Lambda,Data Export,SEV-3,7,267.81,Unoptimized query,Resolved
+INC-0008,2025-02-06,2025-02-01,Amazon Athena,Workflow Automation,SEV-2,85,2728.47,Deployment regression,Resolved
+INC-0009,2025-02-10,2025-02-01,Amazon CloudWatch,Dashboard Reporting,SEV-3,37,691.61,Misconfigured retention policy,Resolved
+INC-0010,2025-02-14,2025-02-01,Amazon API Gateway,Data Export,SEV-2,42,2764.55,Deployment regression,Resolved
+INC-0011,2025-02-18,2025-02-01,Amazon API Gateway,Admin Controls,SEV-4,13,304.45,Logging verbosity increase,Resolved
+INC-0012,2025-03-06,2025-03-01,Amazon API Gateway,Workflow Automation,SEV-2,44,1800.87,Retry storm,Resolved
+INC-0013,2025-03-14,2025-03-01,Amazon Bedrock,Admin Controls,SEV-4,13,769.54,Misconfigured retention policy,Resolved
+INC-0014,2025-03-18,2025-03-01,AWS Lambda,Dashboard Reporting,SEV-3,40,1662.43,Insufficient capacity planning,Resolved
+INC-0015,2025-03-22,2025-03-01,Amazon RDS,Advanced Analytics,SEV-3,42,1207.22,Logging verbosity increase,Resolved
+INC-0016,2025-03-26,2025-03-01,Amazon CloudWatch,Dashboard Reporting,SEV-4,1,37.23,Insufficient capacity planning,Resolved
+INC-0017,2025-04-03,2025-04-01,AWS Lambda,API Integration,SEV-2,99,4066.93,Deployment regression,Resolved
+INC-0018,2025-04-07,2025-04-01,Amazon S3,Dashboard Reporting,SEV-3,13,760.41,Logging verbosity increase,Resolved
+INC-0019,2025-04-15,2025-04-01,Amazon Athena,API Integration,SEV-3,22,1562.49,Always-on development resources,Resolved
+INC-0020,2025-04-19,2025-04-01,Amazon Athena,Advanced Analytics,SEV-3,43,2312.04,Insufficient capacity planning,Resolved
+INC-0021,2025-04-23,2025-04-01,Amazon S3,AI Assistant,SEV-2,35,2591.99,Unoptimized query,Resolved
+INC-0022,2025-04-27,2025-04-01,Amazon S3,API Integration,SEV-4,14,460.71,Misconfigured retention policy,Resolved
+INC-0023,2025-05-01,2025-05-01,Amazon CloudWatch,File Storage,SEV-4,8,555.52,Deployment regression,Resolved
+INC-0024,2025-05-09,2025-05-01,Amazon CloudWatch,Admin Controls,SEV-1,99,2240.72,Third-party integration latency,Resolved
+INC-0025,2025-05-13,2025-05-01,Amazon API Gateway,Workflow Automation,SEV-4,3,107.33,Retry storm,Resolved
+INC-0026,2025-05-21,2025-05-01,Amazon CloudWatch,Data Export,SEV-2,68,1782.11,Always-on development resources,Resolved
+INC-0027,2025-05-25,2025-05-01,Amazon Bedrock,Data Export,SEV-3,17,527.65,Third-party integration latency,Resolved
+INC-0028,2025-06-02,2025-06-01,Amazon CloudWatch,Dashboard Reporting,SEV-2,59,3983.62,Unexpected usage spike,Resolved
+INC-0029,2025-06-06,2025-06-01,Amazon Athena,Workflow Automation,SEV-4,9,619.71,Always-on development resources,Resolved
+INC-0030,2025-06-14,2025-06-01,Amazon S3,AI Assistant,SEV-2,32,754.29,Always-on development resources,Resolved
+INC-0031,2025-06-18,2025-06-01,Amazon S3,AI Assistant,SEV-4,7,270.31,Unexpected usage spike,Resolved
+INC-0032,2025-06-26,2025-06-01,Amazon Bedrock,Admin Controls,SEV-3,25,954.93,Unexpected usage spike,Resolved
+INC-0033,2025-06-30,2025-06-01,Amazon S3,Advanced Analytics,SEV-2,75,3177.92,Deployment regression,Resolved
+INC-0034,2025-07-04,2025-07-01,Amazon CloudWatch,File Storage,SEV-3,38,1555.62,Unoptimized query,Resolved
+INC-0035,2025-07-08,2025-07-01,Amazon Athena,Dashboard Reporting,SEV-3,24,810.16,Misconfigured retention policy,Resolved
+INC-0036,2025-07-12,2025-07-01,Amazon Bedrock,Workflow Automation,SEV-4,8,321.24,Always-on development resources,Resolved
+INC-0037,2025-07-20,2025-07-01,Amazon S3,Data Export,SEV-2,80,4869.69,Unoptimized query,Resolved
+INC-0038,2025-07-24,2025-07-01,Amazon API Gateway,AI Assistant,SEV-4,10,686.98,Unoptimized query,Resolved
+INC-0039,2025-07-28,2025-07-01,Amazon CloudWatch,Admin Controls,SEV-4,9,165.53,Logging verbosity increase,Resolved
+INC-0040,2025-08-01,2025-08-01,Amazon Bedrock,Workflow Automation,SEV-3,9,430.65,Retry storm,Resolved
+INC-0041,2025-08-05,2025-08-01,AWS Lambda,Admin Controls,SEV-4,13,795.73,Insufficient capacity planning,Resolved
+INC-0042,2025-08-09,2025-08-01,Amazon CloudWatch,Data Export,SEV-4,14,809.4,Unexpected usage spike,Resolved
+INC-0043,2025-08-17,2025-08-01,Amazon API Gateway,Workflow Automation,SEV-4,11,276.74,Deployment regression,Resolved
+INC-0044,2025-08-29,2025-08-01,Amazon Athena,API Integration,SEV-3,17,1215.77,Deployment regression,Resolved
+INC-0045,2025-09-06,2025-09-01,Amazon CloudWatch,Advanced Analytics,SEV-4,1,54.85,Misconfigured retention policy,Resolved
+INC-0046,2025-09-10,2025-09-01,Amazon Bedrock,Team Collaboration,SEV-3,27,1911.07,Unexpected usage spike,Resolved
+INC-0047,2025-09-14,2025-09-01,AWS Lambda,Data Export,SEV-2,61,1244.15,Insufficient capacity planning,Resolved
+INC-0048,2025-09-18,2025-09-01,AWS Lambda,Workflow Automation,SEV-2,72,1931.9,Logging verbosity increase,Resolved
+INC-0049,2025-09-22,2025-09-01,Amazon API Gateway,Workflow Automation,SEV-4,11,213.36,Unoptimized query,Resolved
+INC-0050,2025-09-26,2025-09-01,Amazon Athena,Data Export,SEV-4,8,505.55,Always-on development resources,Resolved
+INC-0051,2025-09-30,2025-09-01,Amazon API Gateway,Dashboard Reporting,SEV-4,10,487.69,Unexpected usage spike,Resolved
+INC-0052,2025-10-04,2025-10-01,Amazon S3,Workflow Automation,SEV-3,37,1169.78,Insufficient capacity planning,Resolved
+INC-0053,2025-10-08,2025-10-01,Amazon Athena,Admin Controls,SEV-3,29,1424.64,Misconfigured retention policy,Resolved
+INC-0054,2025-10-12,2025-10-01,Amazon Bedrock,Admin Controls,SEV-4,9,166.12,Retry storm,Resolved
+INC-0055,2025-10-16,2025-10-01,Amazon RDS,Advanced Analytics,SEV-4,6,120.45,Misconfigured retention policy,Resolved
+INC-0056,2025-10-24,2025-10-01,Amazon RDS,Data Export,SEV-2,72,2378.02,Logging verbosity increase,Resolved
+INC-0057,2025-10-28,2025-10-01,Amazon S3,Team Collaboration,SEV-4,8,224.71,Always-on development resources,Resolved
+INC-0058,2025-11-01,2025-11-01,Amazon Bedrock,AI Assistant,SEV-3,12,404.5,Misconfigured retention policy,Resolved
+INC-0059,2025-11-05,2025-11-01,Amazon API Gateway,File Storage,SEV-4,1,53.07,Logging verbosity increase,Resolved
+INC-0060,2025-11-09,2025-11-01,AWS Lambda,AI Assistant,SEV-4,6,252.94,Third-party integration latency,Resolved
+INC-0061,2025-11-13,2025-11-01,Amazon S3,API Integration,SEV-3,34,664.22,Always-on development resources,Resolved
+INC-0062,2025-11-17,2025-11-01,AWS Lambda,AI Assistant,SEV-3,11,585.39,Logging verbosity increase,Resolved
+INC-0063,2025-11-21,2025-11-01,Amazon RDS,File Storage,SEV-4,8,345.83,Logging verbosity increase,Resolved
+INC-0064,2025-11-29,2025-11-01,Amazon S3,Data Export,SEV-3,35,798.85,Retry storm,Resolved
+INC-0065,2025-12-03,2025-12-01,Amazon Athena,Data Export,SEV-3,36,2622.94,Unexpected usage spike,Resolved
+INC-0066,2025-12-07,2025-12-01,Amazon Bedrock,Workflow Automation,SEV-3,30,1931.71,Logging verbosity increase,Resolved
+INC-0067,2025-12-11,2025-12-01,Amazon Athena,AI Assistant,SEV-4,5,326.28,Deployment regression,Resolved
+INC-0068,2025-12-15,2025-12-01,AWS Lambda,Team Collaboration,SEV-4,1,53.61,Logging verbosity increase,Resolved
+INC-0069,2025-12-19,2025-12-01,Amazon S3,Advanced Analytics,SEV-3,36,2493.02,Misconfigured retention policy,Resolved
+INC-0070,2025-12-23,2025-12-01,Amazon API Gateway,Advanced Analytics,SEV-4,7,250.63,Logging verbosity increase,Resolved
+INC-0071,2025-12-27,2025-12-01,Amazon API Gateway,Admin Controls,SEV-3,38,997.78,Always-on development resources,Resolved
+INC-0072,2025-12-31,2025-12-01,AWS Lambda,Workflow Automation,SEV-4,11,283.16,Always-on development resources,Resolved
+INC-0073,2026-01-04,2026-01-01,Amazon RDS,AI Assistant,SEV-4,2,69.74,Third-party integration latency,Resolved
+INC-0074,2026-01-08,2026-01-01,Amazon Bedrock,Workflow Automation,SEV-4,2,133.21,Retry storm,Resolved
+INC-0075,2026-01-12,2026-01-01,Amazon S3,File Storage,SEV-3,40,1247.5,Unoptimized query,Resolved
+INC-0076,2026-01-16,2026-01-01,Amazon Bedrock,File Storage,SEV-2,82,5985.91,Unexpected usage spike,Resolved
+INC-0077,2026-01-20,2026-01-01,Amazon Athena,File Storage,SEV-3,40,723.24,Unexpected usage spike,Resolved
+INC-0078,2026-01-24,2026-01-01,Amazon Bedrock,Data Export,SEV-4,14,277.62,Third-party integration latency,Resolved
+INC-0079,2026-01-28,2026-01-01,Amazon Bedrock,API Integration,SEV-3,43,2715.94,Unexpected usage spike,Resolved
+INC-0080,2026-02-01,2026-02-01,Amazon CloudWatch,Advanced Analytics,SEV-3,7,282.62,Misconfigured retention policy,Resolved
+INC-0081,2026-02-05,2026-02-01,Amazon Bedrock,Admin Controls,SEV-3,22,1533.38,Unoptimized query,Resolved
+INC-0082,2026-02-09,2026-02-01,Amazon API Gateway,Advanced Analytics,SEV-2,56,3455.66,Logging verbosity increase,Resolved
+INC-MAJOR-202602,2026-02-11,2026-02-01,Amazon CloudWatch,Workflow Automation,SEV-2,42,18400.0,Logging verbosity increase,Resolved
+INC-0083,2026-02-13,2026-02-01,AWS Lambda,File Storage,SEV-4,1,52.48,Third-party integration latency,Resolved
+INC-0084,2026-02-21,2026-02-01,Amazon Bedrock,Data Export,SEV-4,14,608.68,Retry storm,Resolved
+INC-0085,2026-02-25,2026-02-01,Amazon API Gateway,Data Export,SEV-4,1,43.79,Third-party integration latency,Resolved
+INC-0086,2026-03-01,2026-03-01,Amazon Bedrock,API Integration,SEV-3,37,1239.9,Unoptimized query,Resolved
+INC-0087,2026-03-05,2026-03-01,Amazon S3,Data Export,SEV-3,27,648.17,Deployment regression,Resolved
+INC-0088,2026-03-13,2026-03-01,Amazon S3,AI Assistant,SEV-4,5,156.11,Insufficient capacity planning,Resolved
+INC-0089,2026-03-17,2026-03-01,Amazon CloudWatch,AI Assistant,SEV-3,39,2486.33,Third-party integration latency,Resolved
+INC-0090,2026-03-21,2026-03-01,Amazon API Gateway,Admin Controls,SEV-1,221,8916.85,Unoptimized query,Resolved
+INC-0091,2026-03-25,2026-03-01,Amazon CloudWatch,Admin Controls,SEV-4,8,153.46,Unexpected usage spike,Resolved
+INC-0092,2026-03-29,2026-03-01,Amazon Athena,API Integration,SEV-3,21,737.51,Misconfigured retention policy,Resolved
+INC-0093,2026-04-06,2026-04-01,AWS Lambda,Admin Controls,SEV-3,10,285.71,Deployment regression,Resolved
+INC-0094,2026-04-10,2026-04-01,Amazon Athena,Advanced Analytics,SEV-3,13,847.94,Misconfigured retention policy,Resolved
+INC-0095,2026-04-14,2026-04-01,Amazon RDS,Data Export,SEV-4,8,215.18,Unexpected usage spike,Resolved
+INC-0096,2026-04-18,2026-04-01,Amazon RDS,Advanced Analytics,SEV-2,42,2182.6,Always-on development resources,Resolved
+INC-0097,2026-04-22,2026-04-01,Amazon API Gateway,Admin Controls,SEV-3,35,864.2,Third-party integration latency,Resolved
+INC-0098,2026-04-26,2026-04-01,Amazon Athena,Workflow Automation,SEV-1,159,3488.08,Unoptimized query,Resolved
+INC-0099,2026-04-30,2026-04-01,Amazon Athena,Workflow Automation,SEV-2,80,3300.97,Deployment regression,Resolved
+INC-0100,2026-05-04,2026-05-01,Amazon Athena,Data Export,SEV-2,97,3680.15,Retry storm,Resolved
+INC-0101,2026-05-08,2026-05-01,Amazon S3,Workflow Automation,SEV-2,40,1056.22,Third-party integration latency,Resolved
+INC-0102,2026-05-12,2026-05-01,Amazon Athena,Admin Controls,SEV-4,8,220.72,Misconfigured retention policy,Resolved
+INC-0103,2026-05-16,2026-05-01,AWS Lambda,Data Export,SEV-3,43,1713.28,Always-on development resources,Resolved
+INC-0104,2026-05-20,2026-05-01,Amazon S3,File Storage,SEV-4,7,295.35,Unexpected usage spike,Resolved
+INC-0105,2026-05-24,2026-05-01,Amazon Bedrock,Admin Controls,SEV-3,34,820.97,Unexpected usage spike,Resolved
+INC-0106,2026-05-28,2026-05-01,Amazon RDS,Dashboard Reporting,SEV-3,28,1380.35,Logging verbosity increase,Resolved
+INC-0107,2026-06-01,2026-06-01,Amazon S3,Admin Controls,SEV-4,14,953.42,Logging verbosity increase,Resolved
+INC-0108,2026-06-05,2026-06-01,Amazon Bedrock,AI Assistant,SEV-2,77,2062.88,Deployment regression,Resolved
+INC-0109,2026-06-13,2026-06-01,Amazon Bedrock,Advanced Analytics,SEV-3,26,1134.91,Deployment regression,Resolved
+INC-0110,2026-06-17,2026-06-01,Amazon API Gateway,Workflow Automation,SEV-3,30,1007.96,Unexpected usage spike,Resolved
+INC-0111,2026-06-21,2026-06-01,Amazon Athena,Dashboard Reporting,SEV-4,8,293.7,Always-on development resources,Resolved
+INC-0112,2026-06-29,2026-06-01,Amazon RDS,Data Export,SEV-3,22,1644.07,Logging verbosity increase,Resolved
